@@ -1,14 +1,65 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
+ 
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import r1 from "../../Assets/Projects/r1.png";
+import r2 from "../../Assets/Projects/r2.png";
+import r3 from "../../Assets/Projects/r3.png";
+import r4 from "../../Assets/Projects/r4.png";
+import r5 from "../../Assets/Projects/r5.png";
+import r6 from "../../Assets/Projects/r6.png";
+import r7 from "../../Assets/Projects/r7.png";
+import p1 from "../../Assets/Projects/s1.jpg";
+import p8 from "../../Assets/Projects/s8.jpg";
+import papri9 from "../../Assets/Projects/papri90.png";
+import papri10 from "../../Assets/Projects/papri10.jpg";
+import papri11 from "../../Assets/Projects/papri11.jpg";
+import papri12 from "../../Assets/Projects/papri12.jpg";
+import papri13 from "../../Assets/Projects/papri13.jpg";
+import papri14 from "../../Assets/Projects/papri14.jpg";
+import papri15 from "../../Assets/Projects/papri15.jpg";
+import papri16 from "../../Assets/Projects/papri16.jpg";
+import papri17 from "../../Assets/Projects/papri17.jpg";
 
+ 
+
+import p2 from "../../Assets/Projects/s2.jpg";
+import p3 from "../../Assets/Projects/s3.jpg";
+import p4 from "../../Assets/Projects/s4.jpg";
+import p5 from "../../Assets/Projects/s5.jpg";
+import p6 from "../../Assets/Projects/s6.jpg";
+import p7 from "../../Assets/Projects/s7.jpg";
+ 
+import f1 from "../../Assets/Projects/1.png";
+import f2 from "../../Assets/Projects/2.png";
+
+import f0 from "../../Assets/Projects/f1.png";
+ 
+import f3 from "../../Assets/Projects/3.png";
+import f4 from "../../Assets/Projects/4.png";
+  
+import el1 from "../../Assets/Projects/el1.png";
+import el2 from "../../Assets/Projects/el2.png";
+import el3 from "../../Assets/Projects/el3.png";
+import el4 from "../../Assets/Projects/el4.png";
+import el5 from "../../Assets/Projects/el5.png";
+  
+import mt0 from "../../Assets/Projects/mt0.png";
+import mt1 from "../../Assets/Projects/mt1.png";
+import mt2 from "../../Assets/Projects/mt2.png";
+import mt3 from "../../Assets/Projects/mt3.png";
+
+
+import sw1 from "../../Assets/Projects//sw1.png";
+import sw2 from "../../Assets/Projects/sw2.png";
+import sw3 from "../../Assets/Projects/sw3.png";
+import sw4 from "../../Assets/Projects/sw4.png";
+import sw5 from "../../Assets/Projects/sw5.png";
+import sw6 from "../../Assets/Projects/sw6.png";
+import sw7 from "../../Assets/Projects/sw7.png";
+
+ 
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -21,72 +72,74 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+         
           <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
+          <ProjectCard
+              imgPaths={[el1,el2,el3,el4,el5]}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="ENICARTHAGE LIBRARY"
+              description="A website constructed with Angular and SpringBoot, provides a comprehensive solution for a college library management, enabling streamlined cataloging, borrowing  also offering visibility into upcoming events. . "
+              
+               
+            />
+          </Col>
+         
+          <Col md={4} className="project-card">
+          <ProjectCard
+              imgPaths={[sw1,sw2,sw3,sw4,sw5,sw6,sw7]}
+              isBlog={false}
+              title="STUDY WAVE"
+              description="An e-learning platform built using the MERN stack, designed to deliver educational content and facilitate remote learning experiences. It provides a user-friendly interface for accessing educational materials. "
+             
+            />
+          </Col>
+         
+          
+         
+          <Col md={4} className="project-card">
+          <ProjectCard
+              imgPaths={[r1,r2,r3,r4,r5,r6,r7]}
+              isBlog={false}
+              title="TASTY"
+              description="A website developed with React.js ,  provides a comprehensive overview of the restaurant . It also showcases the menu with detailed descriptions and pricing "
+               
+              
+            />
+          </Col>
+          <Col md={4} className="project-card">
+          <ProjectCard
+              imgPaths={[papri10,papri11,papri13,papri15,papri16,papri14,papri9,papri12,papri17]}
+              isBlog={false}
+              title="PROFINDER"
+              description="A mobile app developed using React Native and Firebase, enabling service providers to showcase their services. Clients can easily browse through available providers, view service offerings, and book appointments directly through the app."
+             
+            />
+          </Col>
+          <Col md={4} className="project-card">
+          <ProjectCard
+              imgPaths={[f0,f1,f2,f3,f4 ]}
+              isBlog={false}
+              title="HEALTH CODE"
+              description="A mobile app made with Flutter that helps patients find doctors and book appointments, simplifying the process of managing healthcare needs and improving access to medical professionals."
+              
+               
+            />
+            
+          </Col>
+          <Col md={4} className="project-card">
+          <ProjectCard
+              imgPaths={[mt0,mt1,mt2,mt3]}
+              isBlog={false}
+              title="MONEY TRACKER"
+              description="A React Native and Firebase mobile app that allows users to track their daily spending. With a simple and intuitive interface, users can easily log their expenses and keep a daily record of their financial activities. "
+             
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
+         
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
+          
         </Row>
       </Container>
     </Container>
